@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lời Mời Gia Đình</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            color: #4a4a4a;
+            overflow-x: hidden;
+            background: #fafafa;
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #f9f9f9 0%, #ede8e3 100%);
+            z-index: -1;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+        }
+
+        .hero-title {
+            font-size: 2.8em;
+            font-weight: 300;
+            letter-spacing: 8px;
+            color: #5a5a5a;
+            margin-bottom: 40px;
+            opacity: 0;
+            animation: fadeIn 1.5s ease 0.3s forwards;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1em;
+            color: #8a8a8a;
+            font-weight: 300;
+            letter-spacing: 1px;
+            line-height: 1.8;
+            max-width: 600px;
+            opacity: 0;
+            animation: fadeIn 1.5s ease 0.8s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 80px 30px;
+        }
+
+        .section {
+            margin-bottom: 70px;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 1s ease;
+        }
+
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .content-text {
+            font-size: 1.15em;
+            line-height: 2;
+            color: #5a5a5a;
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .divider {
+            width: 60px;
+            height: 1px;
+            background: #c9c5c0;
+            margin: 50px auto;
+        }
+
+        .info-box {
+            background: #ffffff;
+            padding: 50px 40px;
+            border-radius: 2px;
+            border: 1px solid #e8e5e0;
+            margin: 60px 0;
+        }
+
+        .info-title {
+            font-size: 0.85em;
+            letter-spacing: 3px;
+            color: #999;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: 400;
+        }
+
+        .info-item {
+            font-size: 1.15em;
+            margin: 20px 0;
+            color: #5a5a5a;
+            text-align: center;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        .info-item strong {
+            font-weight: 400;
+            color: #4a4a4a;
+        }
+
+        .closing {
+            text-align: center;
+            font-size: 1.1em;
+            line-height: 2;
+            color: #6a6a6a;
+            font-weight: 300;
+            margin: 70px 0 50px;
+        }
+
+        .closing-emphasis {
+            display: block;
+            margin-top: 35px;
+            font-size: 1em;
+            color: #5a5a5a;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 60px 30px;
+            font-size: 0.95em;
+            color: #999;
+            font-weight: 300;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2em;
+                letter-spacing: 5px;
+            }
+
+            .hero-subtitle {
+                font-size: 1em;
+            }
+
+            .container {
+                padding: 60px 20px;
+            }
+
+            .content-text {
+                font-size: 1.05em;
+            }
+
+            .info-box {
+                padding: 40px 25px;
+            }
+
+            .info-item {
+                font-size: 1.05em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+
+    <section class="hero">
+        <h1 class="hero-title">MỘT KHUNG HÌNH, MỘT KỶ NIỆM</h1>
+        <p class="hero-subtitle">
+            Lời mời tới gia đình<br>
+            để cùng lưu giữ khoảnh khắc thanh xuân
+        </p>
+    </section>
+
+    <div class="container">
+        <div class="section">
+            <p class="content-text">
+                Gửi gia đình yêu thương,
+            </p>
+            <p class="content-text">
+                Trong suốt hành trình lớn lên, có một điều luôn không thay đổi —<br>
+                đó là sự hiện diện ấm áp của gia đình bên cạnh.
+            </p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section">
+            <p class="content-text">
+                Những ngày tháng học trò sắp khép lại,<br>
+                nhưng trước khi bước sang trang mới,<br>
+                con muốn mời cả nhà cùng xuất hiện trong một khung hình —
+            </p>
+            <p class="content-text">
+                Nơi thanh xuân gặp gỡ tình thân,<br>
+                nơi ký ức được lưu giữ trọn vẹn.
+            </p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section">
+            <p class="content-text">
+                Đây không chỉ là buổi chụp kỉ yếu,<br>
+                mà là dấu mốc đánh dấu một thời điểm đặc biệt —<br>
+                khi con còn là học sinh, và cả nhà vẫn ở bên nhau.
+            </p>
+        </div>
+
+        <div class="section">
+            <div class="info-box">
+                <div class="info-title">Thông tin buổi chụp</div>
+                <div class="info-item">
+                    <strong>Thời gian:</strong> Chủ nhật cuối tuần này, 09:00 – 10:45 sáng
+                </div>
+                <div class="info-item">
+                    <strong>Địa điểm:</strong> Sân trường THPT Giáp Hải
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section closing">
+            Mong rằng cả nhà sẽ dành thời gian đến,<br>
+            để cùng con tạo nên một kỷ niệm đáng nhớ.<br>
+            Bởi vì có những khoảnh khắc,<br>
+            chỉ cần một lần là đủ để lưu giữ mãi mãi.
+            <span class="closing-emphasis">Cảm ơn gia đình vì luôn ở bên.</span>
+        </div>
+    </div>
+
+    <footer class="footer">
+        Gia đình là nơi để trở về.<br>
+        Và khung hình này, là nơi chúng ta ở lại.
+    </footer>
+
+    <script>
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -80px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
